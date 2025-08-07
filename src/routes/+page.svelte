@@ -1,8 +1,5 @@
 <svelte:head>
-	<link
-		rel="stylesheet"
-		href="https://www.gabriel-export.earth/html-energy-webring/onionring/styles.css"
-	/>
+	<link rel="stylesheet" href="/html-energy-webring/onionring/styles.css" />
 </svelte:head>
 
 <main
@@ -42,14 +39,8 @@
 	</div>
 
 	<div id="html-energy-webring">
-		<script
-			type="text/javascript"
-			src="https://www.gabriel-export.earth/html-energy-webring/onionring/variables.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="https://www.gabriel-export.earth/html-energy-webring/onionring/widget.js"
-		></script>
+		<script type="text/javascript" src="/html-energy-webring/onionring/variables.js"></script>
+		<script type="text/javascript" src="/html-energy-webring/onionring/widget.js"></script>
 	</div>
 
 	<div class="flex flex-col items-center justify-center gap-4 p-8">
