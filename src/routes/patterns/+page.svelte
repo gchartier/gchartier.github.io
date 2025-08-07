@@ -18,7 +18,7 @@
 			<div>
 				<p>Maybe you think of plaid?</p>
 				<img
-					src="plaid.gif"
+					src="patterns/plaid.gif"
 					style="width: 10rem;"
 					alt="a dog in a picnic basekt with a plaid blanket"
 				/>
@@ -26,12 +26,12 @@
 
 			<div>
 				<p>or houndstooth?</p>
-				<img src="houndstooth.gif" style="width: 10rem;" alt="houndstooth pattern" />
+				<img src="patterns/houndstooth.gif" style="width: 10rem;" alt="houndstooth pattern" />
 			</div>
 
 			<div>
 				<p>or some bathroom tiles?</p>
-				<img src="tiles.jpg" style="width: 10rem;" alt="houndstooth pattern" />
+				<img src="patterns/tiles.jpg" style="width: 10rem;" alt="houndstooth pattern" />
 			</div>
 		</div>
 
@@ -40,15 +40,23 @@
 		<div style="display: flex; gap: 4rem;">
 			<div>
 				<p>Like the ripples in dunes...</p>
-				<img src="dunes.jpg" alt="sand dunes with ripples in the sand" style="width: 20rem;" />
+				<img
+					src="patterns/dunes.jpg"
+					alt="sand dunes with ripples in the sand"
+					style="width: 20rem;"
+				/>
 			</div>
 
 			<div>
 				<p>or the waves of the sea</p>
-				<img src="waves.gif" alt="a gif of waves in the sea" style="width: 20rem; height: 3rem;" />
+				<img
+					src="patterns/waves.gif"
+					alt="a gif of waves in the sea"
+					style="width: 20rem; height: 3rem;"
+				/>
 				<p>
 					or the spirals in shells <img
-						src="shell.webp"
+						src="patterns/shell.webp"
 						alt="a nautilus shell with the golden ratio spiral"
 						style="width: 20rem;"
 					/>
@@ -62,7 +70,7 @@
 					>
 				</p>
 				<img
-					src="fractals.jpg"
+					src="patterns/fractals.jpg"
 					alt="examples of fractals in nature looking the same like tree roots, tree branches, rivers, lightning, and leaf veins"
 					style="width: 20rem;"
 				/>
@@ -74,7 +82,7 @@
 <style>
 	main {
 		padding: 3rem;
-		background-image: url('bg.gif');
+		background-image: url('patterns/bg.gif');
 	}
 
 	h1 {

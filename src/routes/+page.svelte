@@ -11,9 +11,9 @@
 	<div class="flex flex-col items-center justify-center p-8">
 		<h1 class="p-8 text-4xl font-bold">Exporting Source into Form</h1>
 		<div class="flex gap-2">
-			<img src="/source.gif" class="mr-4 ml-2 h-20 w-auto" alt="Source" />
-			<img src="/wave.gif" class="h-auto w-36" alt="Wave" />
-			<img src="/form.gif" class="h-20 w-auto" alt="Form" />
+			<img src="home/source.gif" class="mr-4 ml-2 h-20 w-auto" alt="Source" />
+			<img src="home/wave.gif" class="h-auto w-36" alt="Wave" />
+			<img src="home/form.gif" class="h-20 w-auto" alt="Form" />
 		</div>
 		<h2 class="pt-4 text-sm italic">Since 1995</h2>
 	</div>
@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="flex flex-col items-center justify-center gap-4 p-8">
-		<img src="/under-construction.gif" class="h-12 w-auto" alt="Under Construction" />
+		<img src="home/under-construction.gif" class="h-12 w-auto" alt="Under Construction" />
 		<p class="text-center text-sm">This site is under construction.</p>
 		<p class="text-center text-sm">Please check back later.</p>
 	</div>
