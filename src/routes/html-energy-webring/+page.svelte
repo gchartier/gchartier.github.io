@@ -1,0 +1,259 @@
+<svelte:head>
+	<title>✳️ HTML Energy Webring ✳️</title>
+	<link rel="stylesheet" href="html-energy-webring/onionring/styles.css" />
+</svelte:head>
+
+<div class="container">
+	<header>
+		<h1>✳️ HTML Energy Webring ✳️</h1>
+
+		<div class="energy-orb-container">
+			<div class="energy-orb"></div>
+			<div class="rotating-ring"></div>
+		</div>
+
+		<div class="html-energy-text">
+			Explore the
+			<a class="flashing-text" href="https://html.energy" target="_blank">HTML Energy</a>
+			community one hyperlink at a time.
+			<span class="spinning-text">✳️</span>
+		</div>
+	</header>
+
+	<main>
+		<section class="members">
+			<h2>Members</h2>
+			<div id="index">
+				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
+				<script type="text/javascript" src="html-energy-webring/onionring/index.js"></script>
+			</div>
+		</section>
+
+		<section class="widget">
+			<h2>Widget</h2>
+			<div id="html-energy-webring">
+				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
+				<script type="text/javascript" src="html-energy-webring/onionring/widget.js"></script>
+			</div>
+		</section>
+
+		<section class="join">
+			<h2>Join</h2>
+			<div>
+				<a
+					href="https://github.com/gchartier/html-energy-webring?tab=readme-ov-file#-how-to-join"
+					target="_blank">Click here!</a
+				>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="construction">
+			<img src="html-energy-webring/under-construction.gif" alt="Under Construction" />
+		</div>
+
+		<a href="https://garlic.garden/onionring/" target="_blank">Built with OnionRing.js</a>
+		<p class="html-energy-text">Written in pure, raw HTML. Can you feel the energy?</p>
+	</footer>
+</div>
+
+<style>
+	.container {
+		background: #e9e9ec;
+		color: #000000;
+		font-family: 'Comic Sans MS', cursive, sans-serif;
+		text-align: center;
+		margin: 20px;
+		line-height: 1.6;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+
+		min-width: 100vw;
+	}
+
+	header {
+		margin-bottom: 30px;
+	}
+
+	main {
+		border: 3px dotted #000000;
+		background: #e9e9ec;
+		padding: 30px;
+		margin: 20px auto;
+		border-radius: 15px;
+		box-shadow: 0px 0px 197px -32px rgba(6, 241, 3, 0.93);
+		-webkit-box-shadow: 0px 0px 197px -32px rgba(6, 241, 3, 0.93);
+		-moz-box-shadow: 0px 0px 197px -32px rgba(6, 241, 3, 0.93);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding-bottom: 4rem;
+		max-width: 800px;
+	}
+
+	h1,
+	h2 {
+		color: #000000;
+		text-shadow: 2px 2px 4px #06f103;
+		margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.energy-orb-container {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px auto;
+	}
+
+	.energy-orb {
+		width: 100px;
+		height: 100px;
+		background: radial-gradient(circle, #00ff00, #008800);
+		border-radius: 50%;
+		margin: 20px auto;
+		animation: pulse 2s infinite;
+		box-shadow: 0px 0px 197px 14px rgba(6, 241, 3, 0.93);
+		-webkit-box-shadow: 0px 0px 197px 14px rgba(6, 241, 3, 0.93);
+		-moz-box-shadow: 0px 0px 197px 14px rgba(6, 241, 3, 0.93);
+		position: relative;
+		z-index: 2;
+	}
+
+	.rotating-ring {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		border: 3px solid transparent;
+		border-top: 3px solid #06f103;
+		border-right: 3px solid #00ff00;
+		border-bottom: 3px solid #06f103;
+		border-left: 3px solid #00ff00;
+		border-radius: 50%;
+		animation: rotate 3s linear infinite;
+		z-index: 1;
+	}
+
+	.rotating-ring::before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		right: -5px;
+		bottom: -5px;
+		border: 2px solid transparent;
+		border-top: 2px solid #ffff00;
+		border-right: 2px solid #ffff00;
+		border-radius: 50%;
+		animation: rotate 2s linear infinite reverse;
+	}
+
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	#index {
+		height: 300px;
+		width: fit-content;
+		padding: 10px;
+		margin: 0 auto;
+		overflow-y: auto;
+		border: 3px dotted #000000;
+		border-radius: 10px;
+		background-color: #ffffff;
+	}
+
+	#index ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.join {
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	.join div {
+		background-color: #ffffff;
+		border: 3px dotted #000000;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	footer {
+		font-size: 12px;
+		margin-top: 30px;
+		color: #888888;
+	}
+
+	footer img {
+		margin: 0 auto;
+		width: 30rem;
+	}
+
+	.html-energy-text {
+		color: #000000;
+		font-size: 1.1em;
+		margin: 20px 0;
+		text-shadow: 0 0 10px #06f103;
+	}
+
+	.spinning-text {
+		animation: spin 3s linear infinite;
+		display: inline-block;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.flashing-text {
+		animation: flash 1s infinite;
+	}
+
+	@keyframes flash {
+		0%,
+		50% {
+			opacity: 1;
+		}
+		51%,
+		100% {
+			opacity: 0.3;
+		}
+	}
+</style>
