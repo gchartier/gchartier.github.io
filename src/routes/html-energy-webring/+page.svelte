@@ -21,19 +21,19 @@
 	</header>
 
 	<main>
-		<section class="members">
-			<h2>Members</h2>
-			<div id="index">
-				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
-				<script type="text/javascript" src="html-energy-webring/onionring/index.js"></script>
-			</div>
-		</section>
-
 		<section class="widget">
 			<h2>Widget</h2>
 			<div id="html-energy-webring">
 				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
 				<script type="text/javascript" src="html-energy-webring/onionring/widget.js"></script>
+			</div>
+		</section>
+
+		<section class="members">
+			<h2>Members</h2>
+			<div id="index">
+				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
+				<script type="text/javascript" src="html-energy-webring/onionring/index.js"></script>
 			</div>
 		</section>
 
@@ -182,11 +182,10 @@
 	}
 
 	#index {
-		height: 300px;
+		height: fit-content;
 		width: fit-content;
 		padding: 10px;
 		margin: 0 auto;
-		overflow-y: auto;
 		border: 3px dotted #000000;
 		border-radius: 10px;
 		background-color: #ffffff;
