@@ -1,6 +1,74 @@
+<script lang="ts">
+	const sites = [
+		'https://www.gabriel-export.earth/html-energy-webring/',
+		'https://callmecannibal.neocities.org/',
+		'https://croakego.neocities.org/',
+		'http://constcast.org/',
+		'https://corktree.neocities.org/',
+		'https://troy-sucks.neocities.org/',
+		'https://frippenator.neocities.org/',
+		'https://lyer-online.neocities.org/',
+		'https://www.gabriel-export.earth/patterns',
+		'https://www.pixouls.xyz/',
+		'https://ragman.net',
+		'https://amalinalai.github.io/precipice/busstop',
+		'https://naes.tech/htarotml/',
+		'https://naes.tech/htmlun/',
+		'https://harriethw.github.io/html-day-bristol/',
+		'https://killalocalpedophile.neocities.org/'
+	];
+
+	const indexDomain = 'https://www.gabriel-export.earth';
+
+	interface Member {
+		domain: string;
+		sites: string[];
+	}
+
+	function buildMembersList(): Member[] {
+		const membersList: Member[] = [];
+		const index = {
+			domain: 'index',
+			sites: sites.filter((site) => site.startsWith(indexDomain))
+		};
+		const memberSites = sites.filter((site) => !site.startsWith(indexDomain));
+
+		for (const site of memberSites) {
+			const hostname = getHostname(site);
+			if (!membersList.find((member) => member.domain === hostname)) {
+				membersList.push({
+					domain: hostname,
+					sites: [site]
+				});
+			} else {
+				membersList.find((member) => member.domain === hostname)?.sites.push(site);
+			}
+		}
+
+		membersList.sort((a, b) => a.domain.localeCompare(b.domain));
+
+		return [index, ...membersList];
+	}
+
+	function getHostname(url: string) {
+		try {
+			let hostname = new URL(url).hostname;
+			// Remove www. prefix if present
+			return hostname.replace(/^www\./, '');
+		} catch {
+			// Fallback for malformed URLs - extract hostname manually
+			const urlWithoutProtocol = url.replace(/^https?:\/\//, '');
+			const hostname = urlWithoutProtocol.split('/')[0].split('?')[0].split('#')[0];
+			return hostname.replace(/^www\./, '');
+		}
+	}
+</script>
+
 <svelte:head>
 	<title>✳️ HTML Energy Webring ✳️</title>
 	<link rel="stylesheet" href="html-energy-webring/onionring/styles.css" />
+	<script type="text/javascript" src="html-energy-webring/onionring/variables.js" defer></script>
+	<script type="text/javascript" src="html-energy-webring/onionring/widget.js" defer></script>
 </svelte:head>
 
 <div class="container">
@@ -23,18 +91,34 @@
 	<main>
 		<section class="widget">
 			<h2>Widget</h2>
-			<div id="html-energy-webring">
-				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
-				<script type="text/javascript" src="html-energy-webring/onionring/widget.js"></script>
-			</div>
+			<div id="html-energy-webring"></div>
 		</section>
 
 		<section class="members">
 			<h2>Members</h2>
-			<div id="index">
-				<script type="text/javascript" src="html-energy-webring/onionring/variables.js"></script>
-				<script type="text/javascript" src="html-energy-webring/onionring/index.js"></script>
-			</div>
+
+			<ul class="members-list">
+				{#each buildMembersList() as member}
+					<li class="member-item">
+						{#if member.sites.length === 1}
+							<a href={member.sites[0]} target="_blank">{member.domain}</a>
+						{:else}
+							<details class="member-details">
+								<summary>
+									<span>
+										<a href={member.sites[0]} target="_blank">{member.domain}</a>
+									</span>
+								</summary>
+								<ul>
+									{#each member.sites as site}
+										<li><a href={site} target="_blank">{site}</a></li>
+									{/each}
+								</ul>
+							</details>
+						{/if}
+					</li>
+				{/each}
+			</ul>
 		</section>
 
 		<section class="join">
@@ -181,7 +265,7 @@
 		}
 	}
 
-	#index {
+	.members-list {
 		height: fit-content;
 		width: fit-content;
 		padding: 10px;
@@ -189,12 +273,30 @@
 		border: 3px dotted #000000;
 		border-radius: 10px;
 		background-color: #ffffff;
+		list-style-type: none;
 	}
 
-	#index ul {
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
+	.member-item {
+		position: relative;
+		text-align: left;
+		padding: 4px 0;
+	}
+
+	.member-details summary,
+	.member-details summary span {
+		cursor: cell;
+	}
+
+	summary:hover,
+	details[open] summary {
+		background-color: #e9e9ec;
+		color: #70e106;
+		padding-left: 4px;
+		border-radius: 6px;
+	}
+
+	.member-details summary::marker {
+		color: #06f103;
 	}
 
 	.join {

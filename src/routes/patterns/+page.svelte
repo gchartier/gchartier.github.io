@@ -1,3 +1,9 @@
+<svelte:head>
+	<link rel="stylesheet" href="html-energy-webring/onionring/styles.css" />
+	<script type="text/javascript" src="html-energy-webring/onionring/variables.js" defer></script>
+	<script type="text/javascript" src="html-energy-webring/onionring/widget.js" defer></script>
+</svelte:head>
+
 <aside class="border-b-4 border-black bg-lime-400 p-2 text-black">
 	<p>
 		This page was made during <a
@@ -77,6 +83,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="html-energy-webring"></div>
 </main>
 
 <style>
@@ -92,6 +99,12 @@
 
 	h2 {
 		font-size: 2rem;
+		margin-top: 2rem;
+	}
+
+	#html-energy-webring {
+		width: fit-content;
+		margin: 0 auto;
 		margin-top: 2rem;
 	}
 </style>
