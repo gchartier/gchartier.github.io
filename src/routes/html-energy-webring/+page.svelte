@@ -28,7 +28,7 @@
 	function buildMembersList(): Member[] {
 		const membersList: Member[] = [];
 		const index = {
-			domain: 'index',
+			domain: 'index (gabriel-export.earth)',
 			sites: sites.filter((site) => site.startsWith(indexDomain))
 		};
 		const memberSites = sites.filter((site) => !site.startsWith(indexDomain));
