@@ -15,7 +15,8 @@
 		'https://naes.tech/htarotml/',
 		'https://naes.tech/htmlun/',
 		'https://harriethw.github.io/html-day-bristol/',
-		'https://killalocalpedophile.neocities.org/'
+		'https://killalocalpedophile.neocities.org/',
+		'https://baccyflap.com/rsp'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
