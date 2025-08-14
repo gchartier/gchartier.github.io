@@ -1,1 +1,1 @@
-export const prerender = true;
+export const prerender = true; // generate HTML at build

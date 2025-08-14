@@ -53,7 +53,7 @@
 
 	function getHostname(url: string) {
 		try {
-			let hostname = new URL(url).hostname;
+			const hostname = new URL(url).hostname;
 			// Remove www. prefix if present
 			return hostname.replace(/^www\./, '');
 		} catch {

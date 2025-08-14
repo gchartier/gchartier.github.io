@@ -8,6 +8,9 @@ const config = {
 	kit: {
 		adapter: adapter({ fallback: '404.html' })
 	},
+	compilerOptions: {
+		preserveWhitespace: true
+	},
 	extensions: ['.svelte', '.svx']
 };
 
