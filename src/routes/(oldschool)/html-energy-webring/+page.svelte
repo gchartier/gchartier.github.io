@@ -2,21 +2,21 @@
 	const sites = [
 		'https://www.gabriel-export.earth/html-energy-webring/',
 		'https://callmecannibal.neocities.org/',
-		'https://croakego.neocities.org/',
-		'http://constcast.org/',
-		'https://corktree.neocities.org/',
-		'https://troy-sucks.neocities.org/',
-		'https://frippenator.neocities.org/',
 		'https://lyer-online.neocities.org/',
-		'https://www.gabriel-export.earth/patterns',
-		'https://www.pixouls.xyz/',
-		'https://ragman.net',
-		'https://amalinalai.github.io/precipice/busstop',
 		'https://naes.tech/htarotml/',
 		'https://naes.tech/htmlun/',
 		'https://harriethw.github.io/html-day-bristol/',
+		'https://frippenator.neocities.org/',
+		'https://www.pixouls.xyz/',
+		'https://www.gabriel-export.earth/patterns',
+		'https://baccyflap.com/rsp',
 		'https://killalocalpedophile.neocities.org/',
-		'https://baccyflap.com/rsp'
+		'http://constcast.org/',
+		'https://corktree.neocities.org/',
+		'https://amalinalai.github.io/precipice/busstop',
+		'https://troy-sucks.neocities.org/',
+		'https://ragman.net',
+		'https://croakego.neocities.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
