@@ -16,7 +16,8 @@
 		'https://amalinalai.github.io/precipice/busstop',
 		'https://troy-sucks.neocities.org/',
 		'https://ragman.net',
-		'https://croakego.neocities.org/'
+		'https://croakego.neocities.org/',
+		'https://www.starcrush.net/pages/main'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
