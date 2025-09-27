@@ -23,7 +23,9 @@ var sites = [
 	'https://amalinalai.github.io/precipice/busstop',
 	'https://troy-sucks.neocities.org/',
 	'https://ragman.net',
-	'https://croakego.neocities.org/'
+	'https://croakego.neocities.org/',
+	'https://www.starcrush.net/pages/main',
+	'https://brisray.com/utils/webrings.htm'
 ];
 
 //the name of the ring
