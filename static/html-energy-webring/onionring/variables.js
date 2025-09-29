@@ -25,7 +25,8 @@ var sites = [
 	'https://ragman.net',
 	'https://croakego.neocities.org/',
 	'https://www.starcrush.net/pages/main',
-	'https://brisray.com/utils/webrings.htm'
+	'https://brisray.com/utils/webrings.htm',
+	'https://lile5ko.me'
 ];
 
 //the name of the ring
