@@ -1,3 +1,7 @@
+<script>
+	import StickyNote from '$lib/components/StickyNote.svelte';
+</script>
+
 <main
 	class="flex h-screen w-full flex-col items-center justify-around border-20 border-double border-black"
 >
@@ -10,6 +14,7 @@
 		</div>
 		<h2 class="pt-4 text-sm italic">Since 1995</h2>
 	</div>
+	<StickyNote class="top-80 left-40" />
 	<div class="flex flex-col items-center justify-center border-2 border-dotted border-black p-4">
 		<h2 class="text-lg font-semibold">Find me online:</h2>
 		<ul class="list-disc">
