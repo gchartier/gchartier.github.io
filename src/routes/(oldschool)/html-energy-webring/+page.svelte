@@ -19,7 +19,8 @@
 		'https://croakego.neocities.org/',
 		'https://www.starcrush.net/pages/main',
 		'https://brisray.com/utils/webrings.htm',
-		'https://lile5ko.me'
+		'https://lile5ko.me',
+		'https://rayyan.nekoweb.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
@@ -102,7 +103,7 @@
 			<h2>Members</h2>
 
 			<ul class="members-list">
-				{#each buildMembersList() as member}
+				{#each buildMembersList() as member (member.domain)}
 					<li class="member-item">
 						{#if member.sites.length === 1}
 							<a href={member.sites[0]} target="_blank">{member.domain}</a>
@@ -114,7 +115,7 @@
 									</span>
 								</summary>
 								<ul>
-									{#each member.sites as site}
+									{#each member.sites as site (site)}
 										<li><a href={site} target="_blank">{site}</a></li>
 									{/each}
 								</ul>
