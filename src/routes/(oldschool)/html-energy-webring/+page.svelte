@@ -20,7 +20,8 @@
 		'https://www.starcrush.net/pages/main',
 		'https://brisray.com/utils/webrings.htm',
 		'https://lile5ko.me',
-		'https://rayyan.nekoweb.org/'
+		'https://rayyan.nekoweb.org/',
+		'https://willascool.neocities.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
