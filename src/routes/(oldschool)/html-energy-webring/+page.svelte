@@ -21,7 +21,11 @@
 		'https://brisray.com/utils/webrings.htm',
 		'https://lile5ko.me',
 		'https://rayyan.nekoweb.org/',
-		'https://willascool.neocities.org/'
+		'https://willascool.neocities.org/',
+		'https://moonlit.exposed/not-too-far-across-the-fence/',
+		'https://elijahposttrash.neocities.org/',
+		'https://sonechka.bouvardia.blue/',
+		'https://cyanidefish.neocities.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
