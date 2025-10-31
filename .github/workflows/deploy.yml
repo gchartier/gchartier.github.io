@@ -26,10 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
+      - name: Install pnpm 10.18.3
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 10.18.3
+          run_install: false # we will run pnpm install ourselves
 
       - name: Install Node.js
         uses: actions/setup-node@v4
