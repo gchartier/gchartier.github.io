@@ -91,9 +91,8 @@
 		</div>
 
 		<div class="html-energy-text">
-			Explore the
-			<a class="flashing-text" href="https://html.energy" target="_blank">HTML Energy</a>
-			community one hyperlink at a time.
+			Explore a humble undercurrent of the web that is full of <strong>energy</strong>, one
+			hyperlink at a time.
 			<span class="spinning-text">✳️</span>
 		</div>
 	</header>
@@ -105,7 +104,7 @@
 		</section>
 
 		<section class="members">
-			<h2>Members</h2>
+			<h2>Members (A to Z)</h2>
 
 			<ul class="members-list">
 				{#each buildMembersList() as member (member.domain)}
@@ -147,8 +146,18 @@
 			<img src="html-energy-webring/under-construction.gif" alt="Under Construction" />
 		</div>
 
-		<a href="https://garlic.garden/onionring/" target="_blank">Built with OnionRing.js</a>
-		<p class="html-energy-text">Written in pure, raw HTML. Can you feel the energy?</p>
+		<div class="html-energy-text">
+			<p>
+				Built with
+				<a href="https://garlic.garden/onionring/" target="_blank">OnionRing.js</a>
+			</p>
+			<p>
+				Inspired by the
+				<a href="https://html.energy" target="_blank">HTML Energy</a>
+				movement
+			</p>
+			<p>The web is still alive. Can you feel it?</p>
+		</div>
 	</footer>
 </div>
 
@@ -330,6 +339,16 @@
 	footer img {
 		margin: 0 auto;
 		width: 30rem;
+	}
+
+	footer p {
+		color: black;
+	}
+
+	footer div {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 
 	.html-energy-text {
