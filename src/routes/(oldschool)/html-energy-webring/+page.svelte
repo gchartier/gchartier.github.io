@@ -25,7 +25,9 @@
 		'https://moonlit.exposed/not-too-far-across-the-fence/',
 		'https://elijahposttrash.neocities.org/',
 		'https://sonechka.bouvardia.blue/',
-		'https://cyanidefish.neocities.org/'
+		'https://cyanidefish.neocities.org/',
+		'https://pxl.env.pm/',
+		'https://xyzzyzzyzx.xyz/home.html'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
