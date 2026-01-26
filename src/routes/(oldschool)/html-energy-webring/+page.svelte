@@ -28,7 +28,8 @@
 		'https://cyanidefish.neocities.org/',
 		'https://pxl.env.pm/',
 		'https://xyzzyzzyzx.xyz/home.html',
-		'https://devhank.neocities.org/sakuramiku/sakuramiku'
+		'https://devhank.neocities.org/sakuramiku/sakuramiku',
+		'https://sumthing.neocities.org'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
