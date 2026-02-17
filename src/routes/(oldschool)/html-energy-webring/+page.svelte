@@ -29,7 +29,8 @@
 		'https://r.foo.ng',
 		'https://xyzzyzzyzx.xyz/home.html',
 		'https://devhank.neocities.org/sakuramiku/sakuramiku',
-		'https://sumthing.neocities.org'
+		'https://sumthing.neocities.org',
+		'https://lunaseeker.com/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
