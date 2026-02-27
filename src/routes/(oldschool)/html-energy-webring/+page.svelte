@@ -110,7 +110,7 @@
 
 		<section class="members">
 			<h2>Members (A to Z)</h2>
-
+			<h3 class="members-count">{buildMembersList().length} Members!</h3>
 			<ul class="members-list">
 				{#each buildMembersList() as member (member.domain)}
 					<li class="member-item">
@@ -298,6 +298,11 @@
 		border-radius: 10px;
 		background-color: #ffffff;
 		list-style-type: none;
+	}
+
+	.members-count {
+		padding-bottom: 0.5rem;
+		margin-top: -0.5rem;
 	}
 
 	.member-item {
