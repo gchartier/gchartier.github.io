@@ -34,7 +34,8 @@
 		'https://astrma.stream/',
 		'https://binomech.net',
 		'https://crispypata.neocities.org/',
-		'https://worldwideshen.neocities.org/'
+		'https://worldwideshen.neocities.org/',
+		'https://interstellarshareware.net/webrings/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
