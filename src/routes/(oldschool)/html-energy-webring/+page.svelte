@@ -35,7 +35,8 @@
 		'https://binomech.net',
 		'https://crispypata.neocities.org/',
 		'https://worldwideshen.neocities.org/',
-		'https://interstellarshareware.net/webrings/'
+		'https://interstellarshareware.net/webrings/',
+		'https://www.juliannes.website/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
