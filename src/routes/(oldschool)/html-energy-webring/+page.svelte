@@ -36,7 +36,10 @@
 		'https://crispypata.neocities.org/',
 		'https://worldwideshen.neocities.org/',
 		'https://interstellarshareware.net/webrings/',
-		'https://www.juliannes.website/'
+		'https://www.juliannes.website/',
+		'https://my-awesome-website.neocities.org',
+		'https://sabrinaa.page',
+		'https://ruinacchi.neocities.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
