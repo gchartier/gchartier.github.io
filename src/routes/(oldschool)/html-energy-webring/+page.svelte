@@ -34,7 +34,7 @@
 		'https://astrma.stream/',
 		'https://binomech.net',
 		'https://crispypata.neocities.org/',
-		'https://worldwideshen.neocities.org/',
+		'https://shens.world/',
 		'https://interstellarshareware.net/webrings/',
 		'https://www.juliannes.website/',
 		'https://my-awesome-website.neocities.org',
