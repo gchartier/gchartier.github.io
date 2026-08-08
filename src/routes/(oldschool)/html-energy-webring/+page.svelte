@@ -39,7 +39,8 @@
 		'https://www.juliannes.website/',
 		'https://my-awesome-website.neocities.org',
 		'https://sabrinaa.page',
-		'https://ruinacchi.neocities.org/'
+		'https://ruinacchi.neocities.org/',
+		'https://reiscyberworld.neocities.org/'
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
