@@ -22,7 +22,7 @@
 		'https://lile5ko.me',
 		'https://rayyan.nekoweb.org/',
 		'https://willascool.neocities.org/',
-		'https://moonlit.exposed/not-too-far-across-the-fence/',
+		'https://moonlit.panko.zip/train-stop/',
 		'https://elijahposttrash.neocities.org/',
 		'https://cyanidefish.neocities.org/',
 		'https://r.foo.ng',
@@ -40,7 +40,8 @@
 		'https://my-awesome-website.neocities.org',
 		'https://sabrinaa.page',
 		'https://ruinacchi.neocities.org/',
-		'https://reiscyberworld.neocities.org/'
+		'https://reiscyberworld.neocities.org/',
+		'https://sidneyscape.space/',
 	];
 
 	const indexDomain = 'https://www.gabriel-export.earth';
